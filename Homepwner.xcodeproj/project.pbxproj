@@ -16,6 +16,7 @@
 		2C5BCF6A1E71ECCF00A0B827 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF691E71ECCF00A0B827 /* ItemsViewController.swift */; };
 		2C5BCF6C1E71EDD800A0B827 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6B1E71EDD800A0B827 /* Item.swift */; };
 		2C5BCF6E1E71F01A00A0B827 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */; };
+		2C5BCF701E731DE400A0B827 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2C5BCF691E71ECCF00A0B827 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ../ItemsViewController.swift; sourceTree = "<group>"; };
 		2C5BCF6B1E71EDD800A0B827 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2C5BCF691E71ECCF00A0B827 /* ItemsViewController.swift */,
+				2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */,
 				2C5BCF6B1E71EDD800A0B827 /* Item.swift */,
 				2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */,
 				2C5BCF3B1E71EC3E00A0B827 /* AppDelegate.swift */,
@@ -269,6 +272,7 @@
 				2C5BCF6C1E71EDD800A0B827 /* Item.swift in Sources */,
 				2C5BCF6E1E71F01A00A0B827 /* ItemStore.swift in Sources */,
 				2C5BCF3C1E71EC3E00A0B827 /* AppDelegate.swift in Sources */,
+				2C5BCF701E731DE400A0B827 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

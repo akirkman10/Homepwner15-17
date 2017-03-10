@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,18 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="NaE-jH-co5">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE5-1e-ksw">
-                                    <rect key="frame" x="8" y="15" width="176" height="30"/>
+                                    <rect key="frame" x="8" y="17" width="175.5" height="30"/>
                                     <state key="normal" title="Edit"/>
                                     <connections>
                                         <action selector="toggleEditingMode:" destination="YeP-Si-CN9" eventType="touchUpInside" id="XfJ-2B-s5G"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-JQ-luY">
-                                    <rect key="frame" x="192" y="15" width="175" height="30"/>
+                                    <rect key="frame" x="191.5" y="17" width="175.5" height="30"/>
                                     <state key="normal" title="Add"/>
                                     <connections>
                                         <action selector="addNewItem:" destination="YeP-Si-CN9" eventType="touchUpInside" id="k7j-ba-G49"/>
@@ -47,29 +48,47 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="S8S-Vk-ipl" detailTextLabel="Nkz-uP-evN" style="IBUITableViewCellStyleValue1" id="8lr-k8-nO9">
-                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="8lr-k8-nO9" customClass="ItemCell" customModule="Homepwner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="93" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8lr-k8-nO9" id="AMz-70-NcZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S8S-Vk-ipl">
-                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E34-xt-5V7">
+                                            <rect key="frame" x="18" y="0.0" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nkz-uP-evN">
-                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eic-Cs-OqV">
+                                            <rect key="frame" x="319" y="11.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-zv-wFp">
+                                            <rect key="frame" x="18" y="31" width="31" height="12"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lsR-zv-wFp" firstAttribute="leading" secondItem="E34-xt-5V7" secondAttribute="leading" id="7pJ-WZ-PYP"/>
+                                        <constraint firstItem="E34-xt-5V7" firstAttribute="top" secondItem="AMz-70-NcZ" secondAttribute="top" id="7tk-hb-cS9"/>
+                                        <constraint firstAttribute="bottom" secondItem="lsR-zv-wFp" secondAttribute="bottom" id="Cpf-pT-ORN"/>
+                                        <constraint firstItem="E34-xt-5V7" firstAttribute="leading" secondItem="AMz-70-NcZ" secondAttribute="leading" constant="18" id="Q7k-kz-T5J"/>
+                                        <constraint firstItem="Eic-Cs-OqV" firstAttribute="centerY" secondItem="AMz-70-NcZ" secondAttribute="centerY" id="fo3-K6-fos"/>
+                                        <constraint firstItem="lsR-zv-wFp" firstAttribute="top" secondItem="E34-xt-5V7" secondAttribute="bottom" constant="10" id="hdD-j7-KFJ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Eic-Cs-OqV" secondAttribute="trailing" constant="6" id="ilM-I5-MRT"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="E34-xt-5V7" id="KHC-EZ-li1"/>
+                                    <outlet property="serialNumberLabel" destination="lsR-zv-wFp" id="rF1-IT-X3c"/>
+                                    <outlet property="valueLabel" destination="Eic-Cs-OqV" id="TVb-vj-dcG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
