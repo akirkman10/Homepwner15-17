@@ -21,18 +21,30 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE5-1e-ksw">
-                                    <rect key="frame" x="34" y="15" width="30" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE5-1e-ksw">
+                                    <rect key="frame" x="8" y="15" width="176" height="30"/>
                                     <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="toggleEditingMode:" destination="YeP-Si-CN9" eventType="touchUpInside" id="XfJ-2B-s5G"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-JQ-luY">
-                                    <rect key="frame" x="313" y="15" width="30" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-JQ-luY">
+                                    <rect key="frame" x="192" y="15" width="175" height="30"/>
                                     <state key="normal" title="Add"/>
+                                    <connections>
+                                        <action selector="addNewItem:" destination="YeP-Si-CN9" eventType="touchUpInside" id="k7j-ba-G49"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="gV0-JQ-luY" firstAttribute="leading" secondItem="bE5-1e-ksw" secondAttribute="trailing" constant="8" id="AqA-hc-Iic"/>
+                                <constraint firstItem="gV0-JQ-luY" firstAttribute="centerY" secondItem="NaE-jH-co5" secondAttribute="centerY" id="OaA-iO-e0i"/>
+                                <constraint firstAttribute="trailing" secondItem="gV0-JQ-luY" secondAttribute="trailing" constant="8" id="Vry-fL-1ZJ"/>
+                                <constraint firstItem="gV0-JQ-luY" firstAttribute="width" secondItem="bE5-1e-ksw" secondAttribute="width" id="cbI-JS-XxX"/>
+                                <constraint firstItem="bE5-1e-ksw" firstAttribute="leading" secondItem="NaE-jH-co5" secondAttribute="leading" constant="8" id="h5O-fa-IvV"/>
+                                <constraint firstItem="bE5-1e-ksw" firstAttribute="centerY" secondItem="NaE-jH-co5" secondAttribute="centerY" id="ue2-yG-Pxo"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="S8S-Vk-ipl" detailTextLabel="Nkz-uP-evN" style="IBUITableViewCellStyleValue1" id="8lr-k8-nO9">
