@@ -17,6 +17,7 @@
 		2C5BCF6C1E71EDD800A0B827 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6B1E71EDD800A0B827 /* Item.swift */; };
 		2C5BCF6E1E71F01A00A0B827 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */; };
 		2C5BCF701E731DE400A0B827 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */; };
+		2CE997A51E80A38E001E98EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE997A41E80A38E001E98EE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2C5BCF6B1E71EDD800A0B827 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		2CE997A41E80A38E001E98EE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */,
 				2C5BCF3B1E71EC3E00A0B827 /* AppDelegate.swift */,
 				2C5BCF3F1E71EC3E00A0B827 /* Main.storyboard */,
+				2CE997A41E80A38E001E98EE /* DetailViewController.swift */,
 				2C5BCF421E71EC3E00A0B827 /* Assets.xcassets */,
 				2C5BCF441E71EC3E00A0B827 /* LaunchScreen.storyboard */,
 				2C5BCF471E71EC3E00A0B827 /* Info.plist */,
@@ -271,6 +274,7 @@
 				2C5BCF6A1E71ECCF00A0B827 /* ItemsViewController.swift in Sources */,
 				2C5BCF6C1E71EDD800A0B827 /* Item.swift in Sources */,
 				2C5BCF6E1E71F01A00A0B827 /* ItemStore.swift in Sources */,
+				2CE997A51E80A38E001E98EE /* DetailViewController.swift in Sources */,
 				2C5BCF3C1E71EC3E00A0B827 /* AppDelegate.swift in Sources */,
 				2C5BCF701E731DE400A0B827 /* ItemCell.swift in Sources */,
 			);
@@ -517,6 +521,7 @@
 				2C5BCF621E71EC3E00A0B827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C5BCF631E71EC3E00A0B827 /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				2C5BCF651E71EC3E00A0B827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C5BCF661E71EC3E00A0B827 /* Build configuration list for PBXNativeTarget "HomepwnerUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +539,7 @@
 				2C5BCF681E71EC3E00A0B827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
