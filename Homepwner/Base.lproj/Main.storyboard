@@ -156,11 +156,18 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y57-EF-PQd">
-                                        <rect key="frame" x="0.0" y="114" width="343" height="473"/>
+                                        <rect key="frame" x="0.0" y="114" width="343" height="435"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zE-s0-78U">
+                                        <rect key="frame" x="0.0" y="557" width="343" height="30"/>
+                                        <state key="normal" title="Change Date"/>
+                                        <connections>
+                                            <segue destination="TTz-Xh-EFG" kind="show" identifier="changeDate" id="I9k-Dn-vn1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="MhZ-AK-U0l" firstAttribute="leading" secondItem="Ut3-jS-sbd" secondAttribute="leading" id="CrL-qr-kTD"/>
@@ -195,6 +202,41 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1829.5999999999999" y="67.916041979010501"/>
+        </scene>
+        <!--Date View Controller-->
+        <scene sceneID="CCC-48-oht">
+            <objects>
+                <viewController id="TTz-Xh-EFG" customClass="DateViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UDR-Fe-t0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="aDs-za-nRj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6aP-jF-pE2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="T55-5W-bTB">
+                                <rect key="frame" x="0.0" y="164" width="375" height="216"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="511845482.43393701">
+                                    <!--2017-03-22 03:18:02 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T55-5W-bTB" firstAttribute="top" secondItem="UDR-Fe-t0V" secondAttribute="bottom" constant="100" id="HaG-3e-BLU"/>
+                            <constraint firstAttribute="trailing" secondItem="T55-5W-bTB" secondAttribute="trailing" id="Yk5-P7-T2r"/>
+                            <constraint firstItem="T55-5W-bTB" firstAttribute="leading" secondItem="6aP-jF-pE2" secondAttribute="leading" id="tpg-9Y-DRe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseDate" destination="T55-5W-bTB" id="sN6-5O-kzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsV-2b-PEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="69"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tT0-Sn-QoS">

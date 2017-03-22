@@ -105,10 +105,11 @@ class ItemsViewController: UITableViewController {
          if let row = tableView.indexPathForSelectedRow?.row {
             // Get the item associated with this row and pass it along 
             let item = itemStore.allItems[row]
-            let detailViewController =
-               segue.destination as! DetailViewController
+            let detailViewController = segue.destination as! DetailViewController
             detailViewController.item = item
          }
+         
+         
       default:
          preconditionFailure("Unexpected segue identifier.")
       }
