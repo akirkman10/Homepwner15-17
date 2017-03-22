@@ -17,6 +17,7 @@
 		2C5BCF6C1E71EDD800A0B827 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6B1E71EDD800A0B827 /* Item.swift */; };
 		2C5BCF6E1E71F01A00A0B827 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */; };
 		2C5BCF701E731DE400A0B827 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */; };
+		2CA365761E8220D500D13E2B /* customTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA365751E8220D500D13E2B /* customTextField.swift */; };
 		2CE997A51E80A38E001E98EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE997A41E80A38E001E98EE /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		2C5BCF6B1E71EDD800A0B827 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		2CA365751E8220D500D13E2B /* customTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
 		2CE997A41E80A38E001E98EE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2C5BCF691E71ECCF00A0B827 /* ItemsViewController.swift */,
+				2CA365751E8220D500D13E2B /* customTextField.swift */,
 				2C5BCF6F1E731DE400A0B827 /* ItemCell.swift */,
 				2C5BCF6B1E71EDD800A0B827 /* Item.swift */,
 				2C5BCF6D1E71F01A00A0B827 /* ItemStore.swift */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5BCF6A1E71ECCF00A0B827 /* ItemsViewController.swift in Sources */,
+				2CA365761E8220D500D13E2B /* customTextField.swift in Sources */,
 				2C5BCF6C1E71EDD800A0B827 /* Item.swift in Sources */,
 				2C5BCF6E1E71F01A00A0B827 /* ItemStore.swift in Sources */,
 				2CE997A51E80A38E001E98EE /* DetailViewController.swift in Sources */,
