@@ -16,6 +16,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
    @IBOutlet var imageView: UIImageView!
    @IBAction func takePicture(_ sender: UIBarButtonItem) {
       let imagePicker = UIImagePickerController()
+      imagePicker.allowsEditing = true
       // If the device has a camera, take a picture; otherwise, 
       // just pick from photo library 
       if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -99,7 +100,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
    func imagePickerController(_ picker: UIImagePickerController,
                               didFinishPickingMediaWithInfo info: [String: Any]) {
       // Get picked image from info dictionary 
-      let image = info[ UIImagePickerControllerOriginalImage] as! UIImage
+      let image = info[UIImagePickerControllerEditedImage] as! UIImage
       
       // Store the image in the ImageStore for the item's key 
       imageStore.setImage(image, forKey: item.itemKey)
