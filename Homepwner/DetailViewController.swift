@@ -18,18 +18,26 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
    @IBAction func takePicture(_ sender: UIBarButtonItem) {
       let imagePicker = UIImagePickerController()
       imagePicker.allowsEditing = true
-      // If the device has a camera, take a picture; otherwise, 
-      // just pick from photo library 
+      //Goes to camera if available
       if UIImagePickerController.isSourceTypeAvailable(.camera) {
          imagePicker.sourceType = .camera
+         if let crossHairImage = UIImage(named: "crosshair") {
+            let crosshair = UIImageView(image: crossHairImage)
+            crosshair.translatesAutoresizingMaskIntoConstraints = false
+            imagePicker.view.addSubview(crosshair)
+            crosshair.centerXAnchor.constraint(equalTo: imagePicker.view.centerXAnchor).isActive = true
+            crosshair.centerYAnchor.constraint(equalTo: imagePicker.view.centerYAnchor).isActive = true
+         }
       } else {
          imagePicker.sourceType = .photoLibrary
       }
+      
       imagePicker.delegate = self
-      // Place image picker on the screen 
+      
+      // Place image picker on the screen
       present(imagePicker, animated: true, completion: nil)
-   
    }
+   
    
    
    @IBAction func removePicture(_sender: UIBarButtonItem){
