@@ -14,6 +14,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
    @IBOutlet var valueField: customTextField!
    @IBOutlet var dateLabel: UILabel!
    @IBOutlet var imageView: UIImageView!
+   @IBOutlet var removePicture: UIBarButtonItem!
    @IBAction func takePicture(_ sender: UIBarButtonItem) {
       let imagePicker = UIImagePickerController()
       imagePicker.allowsEditing = true
@@ -28,6 +29,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
       // Place image picker on the screen 
       present(imagePicker, animated: true, completion: nil)
    
+   }
+   
+   
+   @IBAction func removePicture(_sender: UIBarButtonItem){
+      imageStore.deleteImage(forKey: item.itemKey)
+      imageView.image = nil
+      removePicture.isEnabled = false //disables icon
    }
    
    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
@@ -70,6 +78,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
       // display it on the image view 
       let imageToDisplay = imageStore.image(forKey: key)
       imageView.image = imageToDisplay
+      removePicture.isEnabled = imageView.image != nil
       
       
    }
@@ -111,6 +120,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
       // Take image picker off the screen - 
       // you must call this dismiss method 
       dismiss(animated: true, completion: nil)
+      removePicture.isEnabled = true
    }
    
    override func prepare( for segue: UIStoryboardSegue, sender: Any?) {

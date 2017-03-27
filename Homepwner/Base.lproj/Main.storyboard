@@ -188,6 +188,12 @@
                                             <action selector="takePicture:" destination="ROk-lW-SXD" id="BuA-6V-uKv"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="J7Y-zq-NpN"/>
+                                    <barButtonItem systemItem="trash" id="tvq-hb-ieA">
+                                        <connections>
+                                            <action selector="removePictureWith_sender:" destination="ROk-lW-SXD" id="ndF-Fu-t5k"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -210,6 +216,7 @@
                         <outlet property="dateLabel" destination="y57-EF-PQd" id="Kxi-VB-036"/>
                         <outlet property="imageView" destination="xi2-l9-DER" id="EAN-mg-bGU"/>
                         <outlet property="nameField" destination="2us-4n-j1e" id="qLI-ha-UZa"/>
+                        <outlet property="removePicture" destination="tvq-hb-ieA" id="c4d-Oh-JN4"/>
                         <outlet property="serialNumberField" destination="gjV-sR-gzT" id="4fF-YL-g2f"/>
                         <outlet property="valueField" destination="UKV-ac-8q0" id="7jl-RN-jMD"/>
                     </connections>
